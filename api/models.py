@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 import uuid
 
 class User(AbstractUser):
-       ...
+       email = models.EmailField(unique=True)
        
        
 class Coworking(models.Model):
