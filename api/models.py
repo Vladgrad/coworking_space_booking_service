@@ -13,9 +13,6 @@ class Coworking(models.Model):
        city = models.CharField(max_length=64)
        address = models.CharField(max_length=256)
        
-       class __str__(self):
-              return self.title
-       
        
 class Desk(models.Model):
        desk_id = models.UUIDField(default=uuid.uuid4)
